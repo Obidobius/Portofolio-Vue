@@ -6,9 +6,10 @@ If you do not have vue installed globaly on your computer you need to do so.
 
 npm install
 npm install vue
-```
 npm install bootstrap --save
 npm install --save vue-router
+```
+
 
 
 ### Compiles and hot-reloads for development
