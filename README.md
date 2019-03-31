@@ -23,9 +23,11 @@ Navigate to
 
 
 ### Login Details
+````
 Login for test app:
 Username: admin
 Password: password
+````
 
 ### Compiles and minifies for production
 ```
