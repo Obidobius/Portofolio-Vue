@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
+    <div class="container contact">
         <br>
-        <h3>Contact Us</h3>
+        <h2 id="cuh">Contact Us</h2>
         <form action="">
             <!--First Name-->
              <div class="form-group">
@@ -29,7 +29,7 @@
                         v-bind:class="{ 'error-border': inputNumberError }" />
                 <div class="alert alert-danger" v-if="inputNumberError" role="alert">Please enter mobile Number</div>
             </div>
-                <button class="login-form_button btn-lg" 
+                <button class="login-form_button contact-button btn-lg" 
                     v-on:click="onSubmitClicked" type="submit">Submit</button>
 
         </form>
@@ -75,4 +75,5 @@ export default {
 .error-border {
     border: 2px solid red;
 }
+
 </style>

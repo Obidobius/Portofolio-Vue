@@ -6,7 +6,8 @@
 
 <script>
   (function () {
-
+        localStorage.setItem('username', 'admin');
+        localStorage.setItem('password', 'password');
   })()
 
 export default {
@@ -44,6 +45,10 @@ $neutralGray: gray;
   background-color:$backgrounColor !important;
   color: $neutralWhite !important;
 }
+                        //---------------------Home Page--------------------//
+#MagicTitle{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
                         //---------------------Log in--------------------//
 .login-form{
   background-color: $backgrounColor;
@@ -80,12 +85,33 @@ $neutralGray: gray;
     max-width: 500px;
 }
 
-
+#moreInfoTrigger:hover{
+    cursor: pointer;
+}
 html{
    background-color: #99803c;
  }
 
-                        //---------------------Spesific Card--------------------//
+                        //---------------------Contact Page--------------------//
+.contact{
+ // background-color: red;
+  background-image: url("http://media.wizards.com/2017/images/daily/c4rd4rt_rRHYhcZZVU.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-button{
+    margin-bottom: 15px;
+  }
+}
+#cuh{
+  color: $neutralWhite;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.form-control{
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+                        //---------------------Specific Card--------------------//
 
 .card{
   border: none !important;
