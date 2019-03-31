@@ -1,4 +1,4 @@
-# noroffcourseassignment
+# Noroff FinalCA
 
 ## Install setup
 ```
