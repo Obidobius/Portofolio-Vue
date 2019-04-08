@@ -11,7 +11,7 @@ export default {
     name:'SearchBar',
     data() {
         return {
-            searchQuery: ''
+            searchQuery: '',
         }
     },
     watch: {

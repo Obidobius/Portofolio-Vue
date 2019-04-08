@@ -15,9 +15,6 @@
     </div>
 </template>
 
-<!-- identity.href = "card-specific.html?id=" + result.cards[i].id; -->
-
-
 <script>
 export default {
     name:'CardContainer',
@@ -32,7 +29,3 @@ export default {
     }
 }
 </script>
-
-<style>
-
-</style>

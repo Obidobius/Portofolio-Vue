@@ -35,7 +35,6 @@
             return{
                 username:'',
                 password: '',
-                
             }
         },
         methods:{

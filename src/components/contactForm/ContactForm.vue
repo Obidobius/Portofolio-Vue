@@ -7,27 +7,27 @@
              <div class="form-group">
                     <input autofocus type="text" id="firstname" placeholder="First Name" v-model="firstname" class="form-control"
                            v-bind:class="{ 'error-border': inputFirstnameError }"/>
-                    <div class="alert alert-danger" v-if="showFirstnameError" role="alert">Please enter first name
+                    <div class="alert alert-danger" v-if="showFirstnameError" role="alert">Please enter a valid first name
                     </div>
             </div>
             <!--Last Name-->
             <div class="form-group">
                     <input type="text" id="lastname" placeholder="Last Name" v-model="lastname" class="form-control"
                            v-bind:class="{ 'error-border': inputLastnameError }"/>
-                    <div class="alert alert-danger" v-if="showLastnameError" role="alert">Please enter last name
+                    <div class="alert alert-danger" v-if="showLastnameError" role="alert">Please enter a valid last name
                     </div>
             </div>
             <!--Email Adress-->
             <div class="form-group">
                 <input type="text" id="email" placeholder="Email Adress" v-model="email" class="form-control"
                         v-bind:class="{ 'error-border': inputEmailError }"/>
-                <div class="alert alert-danger" v-if="showEmailError" role="alert">Please enter email adress</div>
+                <div class="alert alert-danger" v-if="showEmailError" role="alert">Please enter a valid email adress. Example: name@name.com</div>
             </div>
             <!--Number-->
             <div class="form-group">
                 <input type="text" id="number" placeholder="Mobile Number" v-model="number" class="form-control"
                         v-bind:class="{ 'error-border': inputNumberError }" />
-                <div class="alert alert-danger" v-if="inputNumberError" role="alert">Please enter mobile Number</div>
+                <div class="alert alert-danger" v-if="inputNumberError" role="alert">Please enter a valid mobile Number. Example: 111 111 1111</div>
             </div>
                 <button class="login-form_button contact-button btn-lg" 
                     v-on:click="onSubmitClicked" type="submit">Submit</button>

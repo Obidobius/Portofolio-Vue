@@ -6,11 +6,21 @@
         <img id="Magiclogo" src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/5/59/Dfc-ignite.svg?version=5e0f34f51f33e890612c6cf48c4022ec" alt="Magic the Gathering Logo">
         <div class="container">
             <search-bar v-on:on-search-change="showChange"></search-bar>
-            <card-list v-bind:card-list="filteredCards"></card-list> 
+            <card-list v-bind:card-list="filteredCards"></card-list>
+
+            <div v-if="isLoading">
+               <h3>Loading.....</h3> 
+            </div>
+
+
+            <div id="noCard" v-if="searchCard">
+               <h4> No Cards found by that name</h4> 
+            </div>
         </div>        
     </div>
 </template>
-
+ 
+ 
 <script>
 import CardList from '../../components/cardList/CardList';
 import Navigation from '../../components/navigation/Navigation';
@@ -29,9 +39,11 @@ export default {
             this.searchQuery = value;
         }
     },
-       
     created(){
             //cards
+            var isLoading = ""
+            var searchCard = ""
+
             const url ='https://api.magicthegathering.io/v1/cards';
             fetch(`${url}`).then(response => response.json())
             .then(data => {
@@ -42,13 +54,13 @@ export default {
         .catch(err =>{
             console.log(err);
         });
-
     },
-    
     data(){
         return{
             allCards:[],
-            searchQuery: ''
+            searchQuery: '',
+            isLoading: true,
+            searchCard: true
         }
     },
     //FILTER FUNCTION

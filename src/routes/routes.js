@@ -66,7 +66,6 @@ Vue.use(VueRouter);
                 name:'Navigation',
                 component: Navigation
             }
-
         ]
     });
 

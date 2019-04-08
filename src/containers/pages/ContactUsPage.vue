@@ -8,7 +8,6 @@
                 v-bind:show-lastname-error="showLastnameError"
                 v-bind:show-email-error="showEmailError"
                 v-bind:show-number-error="showNumberError" 
-
                 v-bind:input-firstname-error="inputFirstnameError"
                 v-bind:input-lastname-error="inputLastnameError"
                 v-bind:input-email-error="inputEmailError"
@@ -18,7 +17,6 @@
 </template>
 
 <script>
-
 import ContactForm from '../../components/contactForm/ContactForm';
 import Navigation from '../../components/navigation/Navigation';
 

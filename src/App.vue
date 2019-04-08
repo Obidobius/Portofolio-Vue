@@ -19,6 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
+
                     //---------------------Variables--------------------//
 $backgrounColor:#2c3e50;
 $backgrounColorHover:#3f566b;
@@ -48,6 +49,9 @@ $neutralGray: gray;
                         //---------------------Home Page--------------------//
 #MagicTitle{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#noCard{
+  color: $neutralWhite;
 }
                         //---------------------Log in--------------------//
 .login-form{
@@ -82,7 +86,6 @@ $neutralGray: gray;
 .extraInfo{
     padding-top: 30px;
     background-color:$backgrounColor;
-    max-width: 500px;
 }
 
 #moreInfoTrigger:hover{
@@ -94,7 +97,6 @@ html{
 
                         //---------------------Contact Page--------------------//
 .contact{
- // background-color: red;
   background-image: url("http://media.wizards.com/2017/images/daily/c4rd4rt_rRHYhcZZVU.jpg");
   background-repeat: no-repeat;
   background-size: cover;

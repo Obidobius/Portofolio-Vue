@@ -1,4 +1,4 @@
-# Noroff FinalCA
+# Noroff Js Framework-2 Course Assignment
 
 ## Install setup
 ```
