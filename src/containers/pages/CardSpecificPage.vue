@@ -17,9 +17,6 @@
                             <p>{{singleCard.toughness}}</p>    
                     </div>
                 </div>
-            <div class="notLoaded">
-                Loading..... (spinner)
-            </div>
                         <div class="card" >
                             <div id="card-contain" class="card-container">
                                 <br>
@@ -51,8 +48,7 @@ export default {
     data(){
         return {
             singleCard: {
-            },
-            rendering: true
+            }
         }
     },
     methods:{
@@ -69,19 +65,9 @@ export default {
                 });
                 }
             },
-
-            loadingDisplay(){
-                this.rendering = !this.rendering;
-        }
 }
 </script>
 <style lang="scss" scoped>
-.notLoaded{
-    display: block;
-}
-.loaded{
-    display: none;
-}
 .allInfo{
     text-align: center;
     padding-top: 30px;

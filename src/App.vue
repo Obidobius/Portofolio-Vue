@@ -27,7 +27,6 @@ $neutralBlack:rgb(18, 16, 22);
 $neutralWhite:#fafafa;
 $neutralGray: gray;
 
-
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -61,7 +60,6 @@ $neutralGray: gray;
             background-color:$neutralBlack;
             color: $neutralWhite;
             border: 3px solid $neutralBlack;
-      
         }
         &_button:hover{
           color:$neutralGray;
@@ -77,17 +75,15 @@ $neutralGray: gray;
   border-top-left-radius: 0% !important;
   border-top-right-radius: 0% !important;
 }
-
-    .error-border {
-        border-bottom-left-radius: 0% !important;
-        border-bottom-right-radius: 0% !important;
-    }
+.error-border {
+  border-bottom-left-radius: 0% !important;
+  border-bottom-right-radius: 0% !important;
+}
                         //---------------------About Page--------------------//
 .extraInfo{
     padding-top: 30px;
     background-color:$backgrounColor;
 }
-
 #moreInfoTrigger:hover{
     cursor: pointer;
 }
@@ -150,8 +146,7 @@ html{
         border: none !important;
         border-top: 10px solid black;
         border-top-left-radius: 2%;
-        border-top-right-radius: 2%;
-        
+        border-top-right-radius: 2%;   
     }
     .view{
         align-content:center;
@@ -208,6 +203,8 @@ html{
           }
         }
   }
+// Reference for navigation https://paulund.co.uk/css-animation-link-underline
+
 //Removes blue border around buttons when clicking/clicked
 .navigation--contain__button:active, .navigation--contain__button:focus,
 .navigation--contain__button:active:focus {

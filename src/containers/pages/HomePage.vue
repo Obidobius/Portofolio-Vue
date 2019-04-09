@@ -8,7 +8,8 @@
             <search-bar v-on:on-search-change="showChange"></search-bar>
             <card-list v-bind:card-list="filteredCards"></card-list>
 
-            <div v-if="isLoading">
+
+            <div v-if="!filteredCards">
                <h3>Loading.....</h3> 
             </div>
 
@@ -41,7 +42,7 @@ export default {
     },
     created(){
             //cards
-            var isLoading = ""
+            var isLoading = "Loading"
             var searchCard = ""
 
             const url ='https://api.magicthegathering.io/v1/cards';

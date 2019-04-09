@@ -137,4 +137,5 @@ import LoginForm from '../../components/loginForm/LoginForm';
     position: relative;
     align-content: center;
 }
+
 </style>

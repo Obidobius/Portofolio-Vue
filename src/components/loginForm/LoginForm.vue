@@ -49,4 +49,9 @@
     h1{
         color: #fafafa;
     }
+    @media only screen and (max-width: 750px) {
+    h1{
+      font-size: 40px !important;
+    }
+}
 </style>
